@@ -18,6 +18,11 @@
 
   <body>
     <%= render 'shared/navbar' %>
+    <% if logged? %>
+      <h1> Bienvenido </h1>
+    <% else %>
+      <h1> No has iniciado sesión </h1>
+    <% end %>
     <div class="container">
       <% if notice %>
         <div class="alert alert-dismissible alert-success">
